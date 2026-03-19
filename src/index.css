@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  html { font-size: 18px; }
+  .prose h1 { @apply text-4xl font-extrabold mb-6 mt-10 text-emerald-950; }
+  .prose h2 { @apply text-3xl font-bold mb-5 mt-8 text-emerald-900; }
+  .prose h3 { @apply text-2xl font-bold mb-4 mt-6 text-emerald-800; }
+  .prose p { @apply mb-6 leading-relaxed text-lg text-black/70; }
+  .prose ul { @apply list-disc pl-8 mb-6 space-y-3 text-lg; }
+  .prose ol { @apply list-decimal pl-8 mb-6 space-y-3 text-lg; }
+  .prose li { @apply pl-2; }
+  .prose table { @apply w-full min-w-full border-collapse mb-8 overflow-hidden rounded-2xl border border-emerald-100 shadow-sm; }
+  .prose th { @apply border-b border-emerald-100 bg-emerald-50/50 p-5 text-left font-bold text-xs uppercase tracking-widest text-emerald-800; }
+  .prose td { @apply border-b border-emerald-50/50 p-5 text-base leading-relaxed; }
+  .prose tr:last-child td { @apply border-b-0; }
+  .prose strong { @apply font-bold text-emerald-950; }
+  .prose blockquote { @apply border-l-8 border-emerald-200 pl-6 italic my-8 text-emerald-800/60 bg-emerald-50/30 py-4 rounded-r-xl; }
+}
